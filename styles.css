@@ -1,8 +1,17 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
+    background-color: #252525;
+}
 
+.navbar {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    flex-direction: row;
 }
