@@ -6,3 +6,44 @@
 .carousel {
     margin-top: 3.7rem;
 }
+    
+body {
+    background-color: #252525;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    flex-direction: row;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+.contador{
+    height: 200px;
+    width: 100%;
+    background-color:blueviolet ;
+}
+
+.grid{
+    height:600px;
+    width: 100%;
+    background: brown;
+}
+.banner{
+    width: 100%;
+    height: 200px;
+    background-color: cadetblue;
+}
+
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
