@@ -26,6 +26,32 @@
 .carousel .carousel-item {
     padding: 15%;
 }
+.carousel1{
+    background-image:url(../Target-Business/img/carousel1.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.carousel2{
+    background-image:url(../Target-Business/img/carousel2.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+.carousel3{
+    background-image:url(../Target-Business/img/carousel3.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+
+
+
+
+
 
 @media (max-width: 860px) {
     .carousel .carousel-inner {
