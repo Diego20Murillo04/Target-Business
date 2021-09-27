@@ -26,12 +26,13 @@
 .carousel .carousel-item {
     padding: 15%;
 }
-/*
+
 .carousel1{
     background-image:url(../Target-Business/img/carousel1.jpg) ;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size:cover;
+    background-size: cover;
+
 }
 
 .carousel2{
@@ -46,13 +47,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     
-}*/
-
-
-
-
-
-
+}
 
 @media (max-width: 860px) {
     .carousel .carousel-inner {
@@ -76,7 +71,7 @@ body {
 }
 .slider{
     width: 100%;
-    height: 72vh;
+    height: 59vh;
     background-color: rgb(255, 255, 255);
 }
 
