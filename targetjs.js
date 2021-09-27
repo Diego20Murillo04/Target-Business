@@ -1,6 +1,6 @@
 function contador() {
 const counters = document.querySelectorAll('.counter');
-const speed = 100;
+const speed = 50;
 counters.forEach(counter => {
 const updateCount = () => {
 const target = +counter.getAttribute('data-target');
