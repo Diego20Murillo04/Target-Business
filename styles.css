@@ -58,12 +58,6 @@ body::-webkit-scrollbar-thumb {
     
 }*/
 
-
-
-
-
-
-
 @media (max-width: 860px) {
     .carousel .carousel-inner {
         margin-top: 25%;
@@ -106,20 +100,18 @@ body {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
-
-
     text-align: center;
     background: var(--negro);
 }
 
 .counterbox h3 {
-    font-size: 35px;
+    font-size: 25px;
     color: var(--gris);
 
 }
 
 .numerocont {
-    font-size: 45px;
+    font-size: 30px;
     color: var(--amarillo);
     font-weight: bold;
 }
