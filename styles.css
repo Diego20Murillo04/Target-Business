@@ -140,17 +140,52 @@ body {
     height: 90%;
     background-color: var(--negro);
     border-radius: 5px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.95;
 }
+
+.card1{
+    background-image: url(./img/grid/medicina.jpg);
+    
+}
+
+.card2{
+    background-image: url(../Target-Business/img/grid/mascotas.jpg);
+    
+}
+
+.card3{
+    background-image: url(../Target-Business/img/grid/vehiculos.jpg);
+    
+}
+
+.card4{
+    background-image: url(../Target-Business/img/grid/turismo.jpg);
+    
+}
+
+.card5{
+    background-image: url(../Target-Business/img/grid/compras.jpg);
+    
+}
+
+.card6{
+    background-image: url(../Target-Business/img/grid/supermercado.jpg);
+    
+}
+
 
 .banner {
     width: 100%;
     height: 300px;
-    background-image: url(../Target-Business/img/banner1.jpg);
+    background:var(--amarillo);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    opacity: 0.9;
 
 }
 
@@ -213,6 +248,7 @@ body {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    color: rgb(155, 155, 155);
 }
 
 .copy p {
