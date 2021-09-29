@@ -35,7 +35,7 @@ body::-webkit-scrollbar-thumb {
 .carousel-inner{
     width: 100%;
     height: 100%;
-    background: var(--amarillo);
+    background: var(--negro);
 }
 
 body {
@@ -50,6 +50,12 @@ body {
 .slider {
     width: 100%;
     height: 72vh;
+}
+
+@media (max-width: 740px) {
+    .slider {
+        height: auto;
+    }
 }
 
 .contador {
@@ -68,7 +74,7 @@ body {
     flex-direction: column;
     text-align: center;
     background: var(--negro);
-    padding: 0 3rem;
+    margin: 0.5rem;
 }
 
 .counterbox h3 {
@@ -92,6 +98,16 @@ body {
     font-weight: bold;
 }
 
+@media (max-width: 670px) {
+    .counterbox .numero {
+        font-size: 20px;
+    }
+
+    .counterbox h3 {
+        font-size: 15px;
+    }
+}
+
 .grid {
     height: 600px;
     width: 100%;
@@ -109,6 +125,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--blanco);
+    flex-wrap: wrap;
 }
 
 .cardis {
@@ -116,7 +133,6 @@ body {
     height: 90%;
     background-color: var(--negro);
     border-radius: 5px;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
