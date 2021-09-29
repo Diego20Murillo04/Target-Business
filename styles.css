@@ -53,28 +53,37 @@ body {
 }
 
 .contador {
-    height: 20vh;
+    height: auto;
     width: 100%;
     background-color: var(--negro);
-    display: inline-flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .counterbox {
     width: 30%;
     height: 100%;
-    display: inline-flex;
     flex-direction: column;
-    justify-content: space-around;
     text-align: center;
     background: var(--negro);
+    padding: 0 3rem;
 }
 
 .counterbox h3 {
     font-size: 25px;
     color: var(--gris);
+}
 
+.counterbox .numero {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.counterbox p {
+    color: var(--amarillo);
+    font-size: 30px;
 }
 
 .numerocont {
