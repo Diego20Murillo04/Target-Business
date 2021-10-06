@@ -138,7 +138,7 @@ body {
     background-size: cover;
     opacity: 0.95;
 }
-
+/*
 .card1{
     background-image: url(./img/grid/medicina.jpg);
     
@@ -168,7 +168,7 @@ body {
     background-image: url(../Target-Business/img/grid/supermercado.jpg);
     
 }
-
+*/
 @media (max-width: 800px){
     .grid {
         height: 800px;
@@ -217,6 +217,7 @@ body {
     height: 300px;
     background-color: var(--negro);
     display: inline-flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -224,7 +225,8 @@ body {
 .divisionfooter {
     height: 80%;
     width: 30%;
-
+    border-right: solid 1px var(--blanco);
+    min-width: 288px;
 }
 
 .footer ul {
@@ -246,10 +248,6 @@ body {
     margin-left: 10px;
 }
 
-.divisionfooter {
-    border-right: solid 1px var(--blanco);
-}
-
 .horarios {
     text-align: left;
     /*display: inline-flex;
@@ -263,6 +261,35 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     padding: 40px;
+}
+
+@media (max-width: 1150px) {
+    .divisionfooter {
+        border: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 865px) {
+    .footer {
+        height: auto;
+        justify-content: space-evenly;
+    }
+    .footer .logofooter {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer .divisionfooter {
+        border-top: 1px solid var(--blanco);
+        padding-top: 1.5rem;
+    }
 }
 
 .copy {
