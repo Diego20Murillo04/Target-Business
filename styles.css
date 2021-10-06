@@ -218,7 +218,7 @@ body {
     background-color: var(--negro);
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -299,7 +299,14 @@ body {
 
 @media (max-width: 600px) {
     .footer p {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
+        margin: 0 0 5px 0;
+    }
+    .copy{
+        font-size: 0.7rem;
+    }
+    .banner{
+        height: 150px;
     }
 }
 
@@ -307,6 +314,10 @@ body {
     .footer .divisionfooter1 {
         border-top: 1px solid var(--blanco);
         padding-top: 1.5rem;
+        text-align: center;
+    }
+    .footer ul{
+        padding: 0;
     }
 }
 
