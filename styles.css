@@ -298,6 +298,22 @@ body {
 }
 
 @media (max-width: 600px) {
+
+    .footer{
+        text-align: center;
+    }
+
+    .divisionfooter{
+        padding-top: 1.5rem;
+    }
+    .footer .divisionfooter1 {
+        border-top: 1px solid var(--blanco);
+        padding-top: 1.5rem;
+        
+    }
+    .footer ul{
+        padding: 0;
+    }
     .footer p {
         font-size: 0.8rem;
         margin: 0 0 5px 0;
@@ -310,19 +326,7 @@ body {
     }
 }
 
-@media (max-width: 575px) {
-    .footer .divisionfooter1 {
-        border-top: 1px solid var(--blanco);
-        padding-top: 1.5rem;
-        text-align: center;
-    }
-    .footer ul{
-        padding: 0;
-    }
-    .footer p {
-        font-size: 0.8rem;
-    }
-}
+
 
 .copy {
     width: 100%;
