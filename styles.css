@@ -255,6 +255,19 @@ body {
     align-items: center;*/
 }
 
+.divisionfooter1 {
+    height: 80%;
+    width: 30%;
+    border-right: solid 1px var(--blanco);
+    min-width: 288px;
+}
+
+.divisionfooter2 {
+    height: 80%;
+    width: 30%;
+    min-width: 288px;
+}
+
 .logofooter {
     background-image: url(../Target-Business/img/logo.png);
     background-position: center center;
@@ -280,13 +293,16 @@ body {
         height: auto;
         justify-content: space-evenly;
     }
+    .footer .divisionfooter {
+        padding: 0.5rem;
+    }
     .footer .logofooter {
         display: none;
     }
 }
 
 @media (max-width: 575px) {
-    .footer .divisionfooter {
+    .footer .divisionfooter1 {
         border-top: 1px solid var(--blanco);
         padding-top: 1.5rem;
     }
