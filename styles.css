@@ -289,8 +289,8 @@ body {
     .footer p {
         text-align: center;
     }
-    .footer .divisionfooter {
-        padding: 0.5rem;
+    .footer ul {
+        padding: 0;
     }
     .footer .logofooter {
         display: none;
@@ -318,6 +318,9 @@ body {
     }
     .footer ul{
         padding: 0;
+    }
+    .footer p {
+        font-size: 0.8rem;
     }
 }
 
