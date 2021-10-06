@@ -241,6 +241,10 @@ body {
     margin-left: 10px;
 }
 
+.footer i {
+    margin-right: 5px;
+}
+
 .horarios {
     text-align: left;
     /*display: inline-flex;
