@@ -117,11 +117,31 @@ body {
 
 @media (max-width: 670px) {
     .counterbox .numero {
-        font-size: 20px;
+        font-size: 12px;
     }
 
     .counterbox h3 {
-        font-size: 15px;
+        font-size: 18px;
+        text-align: left;
+        margin: 0 5px 15px 0;
+        
+    }
+    .numerocont{
+        font-size: 25px;
+    color: var(--amarillo);
+    font-weight: bold;
+    }
+    .counterbox p {
+        color: var(--amarillo);
+        font-size:25px ;
+    }
+    .counterbox {
+        width: 20%;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        background: var(--negro);
+        opacity: 0.9;
     }
 }
 
