@@ -8,7 +8,7 @@
     --blanco: #feffff;
     --gris: #707070;
     --negro: #000000;
-    --amarillo: #ffe600;
+    --amarillo: #fac31f;
 }
 
 body::-webkit-scrollbar {
@@ -25,7 +25,7 @@ body::-webkit-scrollbar-thumb {
 
 .navbar img {
     width: 80px;
-    height: 35px;
+    height: 36px;
 }
 
 .carousel {
@@ -53,8 +53,7 @@ body {
 
 .slider {
     width: 100%;
-    height: auto;
-    margin-top: 7vh;
+    height: 77vh;
 }
 .slidermobil{
     display: none;
@@ -66,8 +65,7 @@ body {
     .slidermobil{
         display: block;
         width: 100%;
-        height: auto;
-        margin-top: 7vh;
+        height: 75vh;
     }
 }
 
@@ -86,7 +84,7 @@ body {
 
 .counterbox {
     width: 30%;
-    height: 100%;
+    height: auto;
     flex-direction: column;
     text-align: center;
     background: var(--negro);
@@ -122,7 +120,7 @@ body {
 
     .counterbox h3 {
         font-size: 18px;
-        text-align: left;
+        text-align: center;
         margin: 0 5px 15px 0;
         
     }
@@ -147,99 +145,51 @@ body {
 
 
 /*//////////  tarjetas ///////////////////*/
-
-.grid {
-    height: 600px;
+.parent {
     width: 100%;
-    background: var(--blanco);
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.gridbox {
-    height: 45%;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--blanco);
-    flex-wrap: wrap;
-}
-
-.cardis {
-    width: 30%;
-    height: 90%;
-    background-color: var(--negro);
-    border-radius: 5px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.95;
-}
-/*
-.card1{
-    background-image: url(./img/grid/medicina.jpg);
-    
-}
-
-.card2{
-    background-image: url(../Target-Business/img/grid/mascotas.jpg);
-    
-}
-
-.card3{
-    background-image: url(../Target-Business/img/grid/vehiculos.jpg);
-    
-}
-
-.card4{
-    background-image: url(../Target-Business/img/grid/turismo.jpg);
-    
-}
-
-.card5{
-    background-image: url(../Target-Business/img/grid/compras.jpg);
-    
-}
-
-.card6{
-    background-image: url(../Target-Business/img/grid/supermercado.jpg);
-    
-}
-*/
-@media (max-width: 800px){
-    .grid {
-        height: 1500px;
-        width: 100%;
-        background: var(--blanco);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding: 30px;
     }
-}
-    .gridbox{
-        height: 50%;
-        width: 90%;
-        display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--blanco);
     
-    }
-    .cardis {
-        width: 100%;
-        height: 30%;
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+    .div5 { grid-area: 3 / 1 / 4 / 2; }
+    .div6 { grid-area: 3 / 2 / 4 / 3; }
+
+    .gruu {
         background-color: var(--negro);
-        border-radius: 5px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        opacity: 0.95;
-}
+        border-radius: 10px;
+    }
+
+    @media (max-width:600px){
+        .parent {
+            height: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            padding: 20px 10px;
+            
+
+            }
+            
+            .div1 { grid-area: 1 / 1 / 2 / 2; }
+            .div2 { grid-area: 2 / 1 / 3 / 2; }
+            .div3 { grid-area: 3 / 1 / 4 / 2; }
+            .div4 { grid-area: 4 / 1 / 5 / 2; }
+            .div5 { grid-area: 5 / 1 / 6 / 2; }
+            .div6 { grid-area: 6 / 1 / 7 / 2; }
+    }
+
 /* //////////////////  formulario ////////////////////*/
 .contact {
     display: flex;
@@ -268,13 +218,13 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 20px;
+    padding: 50px 0;
     background-color: var(--negro);
 }
 
 .formulario {
     height:auto;
-    width: 47%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -390,9 +340,6 @@ body {
 
 .horarios {
     text-align: left;
-    /*display: inline-flex;
-    justify-content: center;
-    align-items: center;*/
 }
 
 .divisionfooter, .divisionfooter1 {
@@ -402,6 +349,17 @@ body {
     min-width: 288px;
 }
 
+.divisionfooter1{
+    display: flex;
+    justify-content: center;
+}
+.divisionfooter1 ul{
+    margin: 0;
+    padding: 0;
+}
+.divisionfooter1 ul p {
+    margin-left: 0;
+}
 .divisionfooter2 {
     height: 80%;
     width: 30%;
