@@ -213,7 +213,7 @@ body {
 }
 
 .grid {
-    background-color: var(--amarillo);
+    background-color: var(--gris);
     border-radius: 10px;
 }
 
@@ -230,7 +230,7 @@ body {
 .grid .gridIn .text h5 {
     text-align: center;
     color: var(--blanco);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 1100px) {
@@ -578,7 +578,7 @@ body {
         font-size: 0.7rem;
     }
     .banner{
-        height: 150px;
+        height: fit-content;
     }
 }
 
