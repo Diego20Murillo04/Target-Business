@@ -361,9 +361,30 @@ body {
 /*////////////////  banner //////////////*/
 
 .banner{
-    height: 200px;
+    height: auto;
     width: 100%;
-    background-color: var(--amarillo);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+      
+}
+.textobanner{
+    height: auto;
+    width: 50%;
+    text-align: left;
+    color: var(--negro);
+    padding-top: 10px;
+    margin: 50px 0;
+}
+
+
+
+.imagenbanner{
+    height: 100%;
+    width: 50%;
+    background:orange;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
