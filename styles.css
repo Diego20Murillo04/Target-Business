@@ -359,18 +359,21 @@ body {
 
 /*///////////////////  subsidio /////////////////////*/
 
-.subsidio{
+.subsidio {
     height: 350px;
     width: 100%;
-    background:url(./img/bannersubsidio.png);
-    background-position:center;
+    background: url(./img/bannersubsidio.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 @media (max-width: 1125px) {
     .subsidio {
-        background: url(./img/bannersubsidiotablet.png)
+        background: url(./img/banner1100.png);
+        background-position: end;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
