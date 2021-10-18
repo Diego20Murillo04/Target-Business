@@ -35,7 +35,7 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
 }
 
-.carousel-inner{
+.carousel-inner {
     width: 100%;
     height: 100%;
     background: var(--negro);
@@ -61,32 +61,39 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.slidermobil{
+
+.slidermobil {
     display: none;
 }
-@media (max-width:600px){
-    .slider{
+
+@media (max-width:600px) {
+    .slider {
         display: none;
     }
-    .slidermobil{
+
+    .slidermobil {
         display: block;
         width: 100%;
-        height: 100vh;
-        background-color: aquamarine;
+        height: 84vh;
+        background: url(./img/bannercomprasmobil.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
-.slidertext{
+.slidertext {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     height: fit-content;
     width: fit-content;
 
 }
 
-.textoslider{
+.textoslider {
     width: 40%;
     display: inline-flex;
     flex-direction: column;
@@ -95,7 +102,7 @@ body {
 }
 
 
-.carousel-item{
+.carousel-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,17 +160,20 @@ body {
         font-size: 18px;
         text-align: center;
         margin: 0 5px 15px 0;
-        
+
     }
-    .numerocont{
+
+    .numerocont {
         font-size: 25px;
-    color: var(--amarillo);
-    font-weight: bold;
+        color: var(--amarillo);
+        font-weight: bold;
     }
+
     .counterbox p {
         color: var(--amarillo);
-        font-size:25px ;
+        font-size: 25px;
     }
+
     .counterbox {
         width: 20%;
         height: 100%;
@@ -176,13 +186,14 @@ body {
 
 
 /*//////////  tarjetas ///////////////////*/
-.tituloservicios{
+.tituloservicios {
     color: var(--negro);
     text-align: center;
-    margin:30px 0;
+    margin: 30px 0;
     padding: 0%;
     height: fit-content;
 }
+
 .parent {
     width: 100%;
     height: 1000px;
@@ -193,22 +204,27 @@ body {
     grid-row-gap: 30px;
     padding: 30px;
 }
-    
+
 .div1 {
     grid-area: 1 / 1 / 2 / 2;
 }
+
 .div2 {
     grid-area: 1 / 2 / 2 / 3;
 }
+
 .div3 {
     grid-area: 2 / 1 / 3 / 2;
 }
+
 .div4 {
     grid-area: 2 / 2 / 3 / 3;
 }
+
 .div5 {
     grid-area: 3 / 1 / 4 / 2;
 }
+
 .div6 {
     grid-area: 3 / 2 / 4 / 3;
 }
@@ -247,7 +263,7 @@ body {
     }
 }
 
-@media (max-width:600px){
+@media (max-width:600px) {
     .parent {
         height: 1200px;
         width: 100%;
@@ -256,24 +272,29 @@ body {
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
-        padding: 20px 10px;            
+        padding: 20px 10px;
     }
-            
+
     .div1 {
         grid-area: 1 / 1 / 2 / 2;
     }
+
     .div2 {
         grid-area: 2 / 1 / 3 / 2;
     }
+
     .div3 {
         grid-area: 3 / 1 / 4 / 2;
     }
+
     .div4 {
         grid-area: 4 / 1 / 5 / 2;
     }
+
     .div5 {
         grid-area: 5 / 1 / 6 / 2;
     }
+
     .div6 {
         grid-area: 6 / 1 / 7 / 2;
     }
@@ -290,62 +311,83 @@ body {
     }
 }
 
-.gridturismo{
-    background:url(./img/grid/turismopc.png);
+.gridturismo {
+    background: url(./img/grid/turismopc.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.gridvehiculos{
-    background:url(./img/grid/vehiculospc.png);
+.gridvehiculos {
+    background: url(./img/grid/vehiculospc.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.gridmascotas{
-    background:url(./img/grid/mascotaspc.png);
+.gridmascotas {
+    background: url(./img/grid/mascotaspc.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.gridcomercio{
-    background:url(./img/grid/supermercadopc.png);
+.gridcomercio {
+    background: url(./img/grid/supermercadopc.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.gridsalud{
-    background:url(./img/grid/saludpc.png);
+.gridsalud {
+    background: url(./img/grid/saludpc.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.grideducacion{
-    background:url(./img/grid/educacionpc.png);
+
+.grideducacion {
+    background: url(./img/grid/educacionpc.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+
+
+/*///////////////////  subsidio /////////////////////*/
+
+.subsidio{
+    height: 300px;
+    width: 100%;
+    background: violet;
+}
+
+
+
+
+
+
+
 /* //////////////////  formulario ////////////////////*/
 .contact {
     display: flex;
     justify-content: center;
 }
 
-.textocontactobox{
+.textocontactobox {
     height: auto;
     background: var(--negro);
     text-align: center;
-    margin:0;
+    margin: 0;
     padding-top: 50px;
 }
-.textocontacto{
-    color:var(--amarillo);
-    margin:0;
+
+.textocontacto {
+    color: var(--amarillo);
+    margin: 0;
 }
 
 .ContactUs {
@@ -361,7 +403,7 @@ body {
 }
 
 .formulario {
-    height:auto;
+    height: auto;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -380,20 +422,22 @@ body {
     padding: 0;
 }
 
-@media (max-width:800px){
-    .formulario{
+@media (max-width:800px) {
+    .formulario {
         height: fit-content;
     }
-    .map{
+
+    .map {
         height: 350px;
     }
 
 }
+
 .formulario #floatingTextarea2 {
     height: 100px;
 }
 
-.btn{
+.btn {
     margin-top: 15px;
 
 }
@@ -405,7 +449,9 @@ body {
 }
 
 @media (max-width: 800px) {
-    .formulario, .map {
+
+    .formulario,
+    .map {
         width: 90%;
     }
 }
@@ -433,16 +479,17 @@ body {
 
 /*////////////////  banner //////////////*/
 
-.banner{
+.banner {
     height: auto;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:left; 
-    background:var(--blanco);
-      
+    justify-content: left;
+    background: var(--blanco);
+
 }
-.textobanner{
+
+.textobanner {
     height: auto;
     width: 50%;
     text-align: left;
@@ -451,7 +498,7 @@ body {
     margin: 50px 0 50px 50px;
 }
 
-.textobanner h1{
+.textobanner h1 {
     margin-bottom: 15px;
 }
 
@@ -494,24 +541,28 @@ body {
     text-align: left;
 }
 
-.divisionfooter, .divisionfooter1 {
+.divisionfooter,
+.divisionfooter1 {
     height: 80%;
     width: 30%;
     border-right: solid 1px var(--blanco);
     min-width: 288px;
 }
 
-.divisionfooter1{
+.divisionfooter1 {
     display: flex;
     justify-content: center;
 }
-.divisionfooter1 ul{
+
+.divisionfooter1 ul {
     margin: 0;
     padding: 0;
 }
+
 .divisionfooter1 ul p {
     margin-left: 0;
 }
+
 .divisionfooter2 {
     height: 80%;
     width: 30%;
@@ -527,7 +578,10 @@ body {
 }
 
 @media (max-width: 1150px) {
-    .divisionfooter, .divisionfooter1, .divisionfooter2 {
+
+    .divisionfooter,
+    .divisionfooter1,
+    .divisionfooter2 {
         border: none;
     }
 }
@@ -543,12 +597,15 @@ body {
         height: auto;
         justify-content: space-evenly;
     }
+
     .footer p {
         text-align: center;
     }
+
     .footer ul {
         padding: 0;
     }
+
     .footer .logofooter {
         display: none;
     }
@@ -556,29 +613,34 @@ body {
 
 @media (max-width: 600px) {
 
-    .footer{
+    .footer {
         text-align: center;
     }
 
-    .divisionfooter{
+    .divisionfooter {
         padding-top: 1.5rem;
     }
+
     .footer .divisionfooter1 {
         border-top: 1px solid var(--blanco);
         padding-top: 1.5rem;
-        
+
     }
-    .footer ul{
+
+    .footer ul {
         padding: 0;
     }
+
     .footer p {
         font-size: 0.8rem;
         margin: 0 0 5px 0;
     }
-    .copy{
+
+    .copy {
         font-size: 0.7rem;
     }
-    .banner{
+
+    .banner {
         height: fit-content;
     }
 }
@@ -597,4 +659,3 @@ body {
 .copy p {
     margin: 1rem 2rem;
 }
-
