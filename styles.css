@@ -377,6 +377,25 @@ body {
     }
 }
 
+@media (max-width: 750px) {
+    .subsidio {
+        background: url(./img/banner750.png);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 600px) {
+    .subsidio {
+        height: 450px;
+        background: url(./img/bannersubsidiomobil.png);
+        background-position: end left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 
 
 
