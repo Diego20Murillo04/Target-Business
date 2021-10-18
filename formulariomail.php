@@ -22,12 +22,12 @@ $para = "andrex.palop@gmail.com";
 $mensaje =$name. "<br>" .$email. "<br>" .$phone. "<br>" .$message;
         
 if (mail($para, $subjet, $mensaje, $cabeceras)){
-    echo "<script>alert('The message has been sent.');
+    echo "<script>alert('El mensaje ha sido enviado.');
     location.href='index.html';
     </script>";
     
 } else {
-    echo "<script>alert('The message couldn't be sent.);
+    echo "<script>alert('El mensaje no se pudo enviar.);
     location.href='index.html';
     </script>";
 }
