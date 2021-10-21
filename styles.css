@@ -64,7 +64,7 @@ body {
 .slider {
     width: 100%;
     height: 85vh;
-    background-image: url(./img/bannercompraspc.jpg);
+    background-image: url(./img/bannerpruebatexto.png);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -74,24 +74,41 @@ body {
 .textoslider {
     width: 40%;
     height: 100%;
-    display: flex;
+    display:flex;
+    
     align-items: flex-end;
     text-align: left;
     background: rgba(231, 231, 231, 0.5);
 }
 
 .slidertext {
+    padding: 20px 0;
+    height: auto;
+    width: fit-content;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 0 0;
-    margin: 30px 50px;
+    margin: 30px 10% 15px 10%;
+    border:var(--blanco) solid 3px;
+    opacity: 0.9;
+    background:rgba(15, 15, 15, 0.689);
+    
 }
 
-.slidertext h2 {
-    font-size: 3.5rem;
-    color: var(--negro);
+.slidertext p {
+    font-size:3rem;
+    color:var(--gris);
+    margin: -10px 20px;
+    font-weight: 500px;
 }
 
 .slidertext span {
-    font-size: 5rem;
+    font-size: 15rem;
+    font-weight: bold;
+    color: var(--amarillo);
+    margin: -50px 20px;
 }
 
 .slidermobil {
@@ -99,11 +116,18 @@ body {
 }
 
 @media (max-width: 1000px) {
-    .slidertext h2 {
-        font-size: 2rem;
-    }
     .slidertext span {
-        font-size: 3rem;
+        font-size: 6rem;
+    font-weight: bold;
+    color: var(--amarillo);
+    margin:-5px 20px;
+    }
+    .slidertext p {
+        font-size:2rem;
+    color:var(--gris);
+    margin:-5px 20px;
+    font-weight: 400px;
+    text-align: center;
     }
 }
 
@@ -116,6 +140,7 @@ body {
 @media (max-width:600px) {
     .slider {
         display: none;
+        border:none;
     }
 
     .slidermobil {
@@ -130,6 +155,8 @@ body {
         display: flex;
         text-align: center;
         align-items: flex-end;
+        border:none;
+        
     }
 
     .textoslider {
@@ -140,11 +167,13 @@ body {
         display: flex;
         justify-content: center;
         padding: 15px 0;
+        border:none;
     }
 
     .slidertext{
         padding: 0 0;
         margin: 0 0;
+        border:none;
     }
 
 
