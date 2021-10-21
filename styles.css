@@ -9,7 +9,9 @@
     --gris: #f4f4f4;
     --negro: #000000;
     --amarillo: #fac31f;
-    --opacidad: rgb(0, 0, 0, .8)
+    --opacidad: rgb(0, 0, 0, .8);
+    --opacidad2: rgb(26, 26, 26, .5);
+    --opacidad3: rgba(231, 231, 231, 0.5);
 }
 
 .hr {
@@ -78,7 +80,7 @@ body {
     
     align-items: flex-end;
     text-align: left;
-    background: rgba(231, 231, 231, 0.5);
+    background: var(--opacidad3);
 }
 
 .slidertext {
