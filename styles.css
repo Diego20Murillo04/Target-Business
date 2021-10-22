@@ -163,27 +163,26 @@ body {
 
     .textoslider {
         width: 100%;
-        height: 10%;
-        text-align: center;
+        height: auto;
         background: var(--negro);
+        text-align: center;
         display: flex;
         justify-content: center;
-        padding: 15px 0;
+        padding: 0;
         border:none;
     }
 
     .slidertext{
-        padding: 0 0;
-        margin: 0 0;
+        padding: 0;
+        margin: 0;
         border:none;
+        background: none;
     }
-
-
-    
 
     .slidertext h2 {
         font-size: 1rem;
         color: var(--gris);
+        margin: 0;
         
     }
     .slidertext span {
