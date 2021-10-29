@@ -845,33 +845,62 @@ body {
 
 
 .formularioactivacion{
-    height: 105vh;
+    height: 95vh;
     width: 100%;
-    background:var(--negro);
+    background:var(--gris);
     display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
+    justify-content: left;
+    align-items: center;
     
 }
 
 .textocontactoboxact {
     width: 100%;
     height: fit-content;
-    background: var(--negro);
+    background: var(--gris);
     text-align: center;
     margin: 0;
     padding-top: 50px;
     margin-bottom: -80px;
+    color: var(--negro);
 }
 .activacion {
     min-height: 350px;
     width: 60%;
-    height: 90%;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    padding: 30px 0 50px 0;
-    background-color: var(--negro);
+    padding: 30px 50px 50px 0;
+    background-color: var(--gris);
+}
+
+.imagenactivacion{
+    min-height: 350px;
+    width: 35%;
+    height: 65%;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: -50px;
+    background-image: url(./img/activacion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 11px -6px rgba(0,0,0,0.75);
+}
+
+.textocontactoact {
+    color: var(--negro);
+    margin: 0;
+}
+
+.textoactivacion{
+    height: 5vh;
+    width: 100%;
+    margin: 0;
+    background: var(--gris);
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--grisoscuro);
 }
