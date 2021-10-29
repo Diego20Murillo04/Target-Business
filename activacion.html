@@ -15,7 +15,7 @@
   <title>Target Business</title>
 </head>
 
-<body onload="contador()">
+<body class="activacionbody">
   <script src="targetjs.js"></script>
   <header>
     <!--     navbar      -->
@@ -61,20 +61,20 @@
               completo</label></div>
 
 
-              <div class="form-floating col-md-12"><input class="form-control border border-dark" id="floatingInput"
+              <div class="form-floating col-md-6"><input class="form-control border border-dark" id="floatingInput"
                 name="number" placeholder="Número de cedula" type="number" /> <label for="floatingInput">Número de
                 Cedula</label></div>
+
+                <div class="form-floating col-md-6"><input class="form-control border border-dark" id="floatingInput"
+                    name="number" placeholder="Número de contacto" type="number" /> <label for="floatingInput">
+                    Celular</label></div>
     
           <div class="form-floating col-12"><input class="form-control border border-dark" id="floatingInput"
               name="email" placeholder="correo@ejemplo.com" type="email" /> <label for="floatingInput">Correo
               electrónico</label>
           </div>
 
-            <div class="form-floating col-md-6"><input class="form-control border border-dark" id="floatingInput"
-                name="number" placeholder="Número de contacto" type="number" /> <label for="floatingInput">
-                Celular</label></div>
-
-          <div class="form-floating col-md-6"><input class="form-control border border-dark" id="floatingInput"
+          <div class="form-floating col-md-12"><input class="form-control border border-dark" id="floatingInput"
               name="subject" placeholder="Ultimos 4 digitos de su credencial" type="text" /> <label for="floatingInput">Ultimos 4 digitos de su credencial</label></div>
 
           <div class="d-grid gap-2 col-6 mx-auto"><button class="btn btn-warning border-2" type="submit">Enviar</button>
