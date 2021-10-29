@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!--FontAwesome-->
+  <script src="https://kit.fontawesome.com/0eaecc8c33.js" crossorigin="anonymous"></script>
+  <!--Bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+  <title>Target Business</title>
+</head>
+
+<body onload="contador()">
+  <script src="targetjs.js"></script>
+  <header>
+    <!--     navbar      -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/logo-nav.png" alt="Logo"></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0 justify-content-end flex-grow-1 pe-3 nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#" style="color: white;">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios" style="color: whitesmoke;">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ContactUs" style="color: whitesmoke;">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros" style="color: whitesmoke;">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- aca va el formulario de activacion      -->
+  <section class="formularioactivacion">
+
+  <div class="activacion">
+    <div class="textocontactoboxact" id="ContactUs">
+        <h1 class="textocontacto">ACTIVACION</h1>
+      </div>
+    <div class="formulario">
+      <form action="formulariomail.php" class="form-floating" method="post">
+        <div class="row g-3">
+          <div class="form-floating col-12"><input class="form-control border border-warning" id="floatingInput"
+              name="fullname" placeholder="Nombre completo" type="text" /> <label for="floatingInput">Nombre
+              completo</label></div>
+
+          <div class="form-floating col-12"><input class="form-control border border-warning" id="floatingInput"
+              name="email" placeholder="correo@ejemplo.com" type="email" /> <label for="floatingInput">Correo
+              electrónico</label>
+          </div>
+
+          <div class="form-floating col-md-6"><input class="form-control border border-warning" id="floatingInput"
+            name="number" placeholder="Número de contacto" type="number" /> <label for="floatingInput">Número de
+            Cedula</label></div>
+
+          <div class="form-floating col-md-6"><input class="form-control border border-warning" id="floatingInput"
+              name="subject" placeholder="Ultimos 4 digitos de su credencial" type="text" /> <label for="floatingInput">Ultimos 4 digitos de su credencial</label></div>
+
+          <div class="d-grid gap-2 col-6 mx-auto"><button class="btn btn-warning border-2" type="submit">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  </section>
+
+  <!--   footer   -->
+  <footer>
+    <div class="footer">
+      <div class="divisionfooter">
+        <ul>
+          <li>
+            <p>Direccion Postal: <p> Calle 49b #68-112 Medellín Colombia</p>
+            </p>
+          </li>
+          <li>
+            <p>Teléfonos:</p>
+            <p> <i class="fab fa-whatsapp"></i> 314 6901127 - 318 2893519</p>
+          </li>
+          <li>
+            <p>Correo Electrónico: <br> <a href=""> servicioalcliente.digitalmarket@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="divisionfooter1">
+
+        <ul>
+          <p>Horarios de atención</p>
+          <li class="horarios">
+            <p>Lunes a Viernes: 9 am - 5 pm</p>
+          </li>
+          <li class="horarios">
+            <p>Sabado: 9 am - 2 pm</p>
+          </li>
+          <li class="horarios">
+            <p><i class="fab fa-instagram"></i>Targetbussines</p>
+          </li>
+          <li class="horarios">
+            <p><i class="fab fa-facebook"></i>Targetbussines</p>
+          </li>
+        </ul>
+      </div>
+      <div class="divisionfooter2 logofooter"></div>
+    </div>
+    <div class="copy">
+      <p>2021 - Copyright© | Target-Bussines All right reserved</p>
+    </div>
+  </footer>
+
+  <!--Bootstrap js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
