@@ -60,24 +60,24 @@
       <form action="formularioactivacion.php" class="form-floating" method="post">
         <div class="row g-3">
           <div class="form-floating col-12"><input class="form-control border border-dark" id="floatingInput"
-              name="fullname" placeholder="Nombre completo" type="text" /> <label for="floatingInput">Nombre
+              name="fullname" placeholder="Nombre completo" type="text" required/> <label for="floatingInput">Nombre
               completo</label></div>
 
 
               <div class="form-floating col-md-6"><input class="form-control border border-dark" id="floatingInput"
-                name="numbercc" placeholder="Número de cedula" type="number" /> <label for="floatingInput">Cédula</label></div>
+                name="numbercc" placeholder="Número de cedula" type="number" required/> <label for="floatingInput">Cédula</label></div>
 
                 <div class="form-floating col-md-6"><input class="form-control border border-dark" id="floatingInput"
-                    name="number" placeholder="Número de contacto" type="number" /> <label for="floatingInput">
+                    name="number" placeholder="Número de contacto" type="number" required/> <label for="floatingInput">
                     Celular</label></div>
     
           <div class="form-floating col-12"><input class="form-control border border-dark" id="floatingInput"
-              name="email" placeholder="correo@ejemplo.com" type="email" /> <label for="floatingInput">Correo
+              name="email" placeholder="correo@ejemplo.com" type="email" required/> <label for="floatingInput">Correo
               electrónico</label>
           </div>
 
           <div class="form-floating col-md-12"><input class="form-control border border-dark" id="floatingInput"
-              name="activacion" placeholder="Ultimos 4 digitos de su credencial" type="number" maxlength="4"/> <label for="floatingInput">Ultimos 4 digitos de su credencial</label></div>
+              name="activacion" placeholder="Ultimos 4 digitos de su credencial" type="number" required minlength="4" maxlength="4"/> <label for="floatingInput">Ultimos 4 digitos de su credencial</label></div>
 
           <div class="d-grid gap-2 col-6 mx-auto"><button class="btn btn-warning border-2" type="submit">Enviar</button>
           </div>
