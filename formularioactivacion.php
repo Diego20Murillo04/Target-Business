@@ -5,11 +5,13 @@ $name = $_POST["fullname"];
 
 $email = $_POST["email"];
 
-$subjet = $_POST["subject"];
+$subjet = "ACTIVACION";
+
+$activacion = $_POST["activacion"];
 
 $phone = $_POST["number"];
 
-$message = $_POST["message"];
+$cedula = $_POST["numbercc"];
 
 $para = "servicioalcliente.digitalmarket@gmail.com";
 
@@ -21,7 +23,7 @@ $para = "servicioalcliente.digitalmarket@gmail.com";
         
 $mensaje =$name. "<br>" .$email. "<br>" .$phone. "<br>" .$message;
         
-if (mail($para, $subjet, $mensaje, $cabeceras)){
+if (mail($para, $activacion, $mensaje, $cabeceras)){
     echo "<script>alert('El mensaje ha sido enviado.');
     location.href='index.html';
     </script>";
