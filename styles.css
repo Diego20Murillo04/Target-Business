@@ -329,7 +329,11 @@ body {
 }
 
 .grid:hover {
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
+}
+
+.grid:hover .grinIn {
+    backface-visibility: hidden;
 }
 
 .grid .gridIn {
@@ -359,7 +363,7 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
     background: var(--blancoazul);
     backface-visibility: hidden;
     transform-style: preserve-3d;
