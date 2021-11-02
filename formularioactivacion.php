@@ -5,7 +5,7 @@ $name = $_POST["fullname"];
 
 $email = $_POST["email"];
 
-$subjet = "ACTIVACION";
+$subjet = "ACTIVACION";,  s
 
 $activacion = $_POST["activacion"];
 
