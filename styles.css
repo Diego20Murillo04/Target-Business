@@ -499,6 +499,10 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    .subsidioP {
+        width: 95%;
+    }
 }
 
 @media (max-width: 750px) {
@@ -507,6 +511,10 @@ body {
         background-position:center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .subsidio .subsidioText p {
+        font-size: 1.2rem;
     }
 }
 
